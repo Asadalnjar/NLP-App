@@ -1,0 +1,26 @@
+.section{
+    background-color: white;
+    height: 91.7vh;
+}
+
+.item{
+    background-color: #D1D1D1 !important;
+}
+.item2{
+    background-color: #D1D1D1 !important;
+}
+
+thead{
+    border-bottom: 2px solid black ;
+}
+.data{
+    border-bottom: 2px solid black;
+}
+
+.table-1 {
+    height: 29vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}

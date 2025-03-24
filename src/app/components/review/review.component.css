@@ -1,0 +1,30 @@
+.section{
+
+    background-color: #D1D1D1 !important;
+}
+input{
+    border: 1px solid rgb(77, 76, 76);
+    padding: 15px;
+    border-radius: 50vh;
+}
+
+@media (width<=800px) {
+    .section{
+        width: 75% !important;
+        margin-top: 50px;
+    }
+    
+}
+
+.text-1{
+    height: 100px;
+    width: 100%;
+   
+    border: 1px solid rgb(77, 76, 76);  
+    resize: none;
+    border-radius: 40px;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}

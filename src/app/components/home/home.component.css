@@ -1,0 +1,120 @@
+.section{
+
+    background-color: #D1D1D1 !important;
+}
+
+
+input{
+    border: 1px solid rgb(77, 76, 76);
+    padding: 15px;
+    border-radius: 50vh;
+}
+
+.text-1{
+    height: 100px;
+    width: 100%;
+    border: 1px solid rgb(77, 76, 76);  
+    resize: none;
+    border-radius: 40px;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.btn-main{
+    border-radius: 50vh;
+}
+
+.section{
+
+    background-color: #D1D1D1 !important;
+}
+
+
+.item{
+    background-color: #959595;
+    border: 1px solid black;
+    border-radius: 40px;
+
+}
+
+.div-1{
+    background-color: white;
+    border-left: 8px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+.div-2{
+    background-color: white;
+    border: 1px solid black ;
+}
+.btn-main{
+    border-radius: 50vh;
+}
+.chart{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background:conic-gradient(
+        #E86868 0% 25%,
+        #6D68E8 25% 40%,
+        #ca68e8 40% 60%,
+        #51cf84 60% 85%,
+        #E8E468 85% 100%
+    );
+
+}
+.child-chart{
+    background-color: #D1D1D1 ;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.color{
+    width: 40px;
+    height: 20px;
+    background-color: #E8E468 ;
+}
+.color2{
+    width: 40px;
+    height: 20px;
+    background-color:  #6D68E8 ;
+}
+.color3{
+    width: 40px;
+    height: 20px;
+    background-color:#E86868 ;
+}
+.color4{
+    width: 40px;
+    height: 20px;
+    background-color:#ca68e8 ;
+}
+.color5{
+    width: 40px;
+    height: 20px;
+    background-color:#51cf84 ;
+}
+
+.item1{
+    background-color: #959595;
+    border: 1px solid black;
+    border-radius: 40px;
+    height: 35vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.item2{
+    background-color: #959595;
+    border: 1px solid black;
+    border-radius: 40px;
+    height: 35vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}

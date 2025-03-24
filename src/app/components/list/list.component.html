@@ -1,0 +1,31 @@
+<div class="section w-75 mx-auto  p-4 rounded-5 mt-3 p-3 px-5">
+    <h1 class="text-center">Research list</h1>
+    <div class="table-1">
+        <table class="w-100">
+            <thead>
+                <tr>
+                    <th>Research Name</th>
+                    <th>Research Type</th>
+                    
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            
+                <tbody >
+                    @for (item of returnArray; track $index) {
+                        <tr>
+                            <td>{{item.researchName}}</td>
+                            <td>{{item.researchType}}</td>
+                            <td>
+                                <button class="btn-main mainbtn" [routerLink]="['/main/det',item.id]" >View</button>
+                                
+                            </td>
+                        </tr>
+                    }
+                    
+                    
+                </tbody>
+          
+        </table>
+    </div>
+</div>

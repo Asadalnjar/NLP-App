@@ -1,0 +1,24 @@
+<div class="section w-50 mx-auto rounded-5 mt-3  p-5">
+    <h1 class="text-center mb-3">Rating Review</h1>
+    <div class="div-1 p-2 mb-2">
+        <h5 class="mb-0">Note: Please rate the service and add your comment!</h5>
+        
+    </div>
+    @if (resText) {<p class="alert alert-info w-50 mx-auto text-center">{{resText}}</p>}
+    
+    <div class="rating d-flex justify-content-center align-items-center mt-3">
+        @for (str of starsarray; track $index)
+        {
+        <span (click)="rate($index + 1)" [class.filled]="$index < stars" class="star fs-1 me-2">
+            &#9733;
+        </span>
+        }
+    </div>
+     <input type="text" placeholder="research name" class="mx-auto d-block w-50" [(ngModel)]="researchName">
+
+    <div class="mt-4">
+        <textarea class="text-1 px-4 py-3 " placeholder="Add your comment here..." [(ngModel)]="comment"></textarea>
+    </div>
+    <button class="btn-main w-50 mx-auto d-block my-4" (click)="sendDataRate()" [disabled]="!researchName||!comment||!stars">Submit Rating</button>
+
+</div>

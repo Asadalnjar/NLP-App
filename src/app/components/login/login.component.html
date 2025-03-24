@@ -1,0 +1,48 @@
+<div class="section w-50 mx-auto  p-4 rounded-5 mt-5">
+    <h1 class="text-main text-center">Login Now</h1> 
+    @if (resText) {<p class="alert alert-danger w-50 text-center mx-auto">{{resText}}</p> }
+    <div class="my-2"> 
+        <label for="role" class="mb-1 ms-1">Select role</label>
+        <select  [(ngModel)]="role" id="role" class=" w-100 p-2 rounded-3">
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+        </select>
+    </div>          
+                <form [formGroup]="loginFrom" (ngSubmit)="loginUser()">
+                    <div class="my-2">
+                        <label for="email" class="mb-1 ms-1">Email</label>
+                        <input [ngClass]="{
+                            'is-valid' :!loginFrom.get('email')?.errors &&(loginFrom.get('email')?.touched||loginFrom.get('email')?.dirty),
+                            'is-invalid' :loginFrom.get('email')?.errors &&(loginFrom.get('email')?.touched||loginFrom.get('email')?.dirty)
+                          }" type="email" formControlName="email" placeholder="ex:mazen@gmail.com" id="email" class="form-control">
+                         @if (loginFrom.get('email')?.errors && loginFrom.get('email')?.touched) {
+                            <div class="text-danger text-center p-2 fs-6">
+                                @if (loginFrom.get('email')?.getError('required')) { <p class="mb-0">email is Required</p>}
+                                @else if (loginFrom.get('email')?.getError('email')){<p class="mb-0">email format is not correct</p>}
+                            </div>
+                            }
+                    </div>
+                    <div class="my-2">
+                        <label for="password" class="mb-1 ms-1">Password</label>
+                        <input [ngClass]="{
+                            'is-valid' :!loginFrom.get('password')?.errors &&(loginFrom.get('password')?.touched||loginFrom.get('password')?.dirty),
+                            'is-invalid' :loginFrom.get('password')?.errors &&(loginFrom.get('password')?.touched||loginFrom.get('password')?.dirty)
+                          }" type="password" formControlName="password" placeholder="ex:Mazen@123" id="password" class="form-control">
+                           @if (loginFrom.get('password')?.errors && loginFrom.get('password')?.touched) {
+                            <div class="text-danger text-center p-2 fs-6">
+                                @if (loginFrom.get('password')?.getError('required')) { <p class="mb-0">password is Required</p>}
+                                @else if (loginFrom.get('password')?.getError('pattern')){<p class="mb-0">password format is not
+                                    correct</p>}
+                            </div>
+                            }
+                    </div>
+            
+                
+                    
+                    <button class="btn-main w-50 mx-auto d-block mainbtn p-3 mainbtn " (click)="rolee()">Login 
+                        @if (loading) {<i class="fa-solid fa-circle-notch fa-spin"></i>}
+                    </button>
+                    <div class="div d-flex text-center justify-content-center mt-3"><p class="me-2">Don't have an account? </p><a class="nav-link text-info" routerLink="/auth/register" >register now</a></div>
+                </form>
+
+</div>

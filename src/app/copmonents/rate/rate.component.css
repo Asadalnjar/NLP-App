@@ -1,0 +1,44 @@
+.section{
+
+    background-color: #D1D1D1 !important;
+}
+.div-1{
+    background-color: white;
+    border-left: 8px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.text-1{
+    height: 100px;
+    width: 100%;
+    border: 1px solid rgb(77, 76, 76);  
+    resize: none;
+    border-radius: 40px;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.btn-main{
+    border-radius: 50vh;
+}
+
+/* rating.component.css */
+.star {
+    font-size: 2rem;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .filled {
+    color: black;
+  }
+
+  input{
+    border: 1px solid rgb(77, 76, 76);
+    padding: 15px;
+    border-radius: 50vh;
+   
+}

@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg position-sticky top-0 start-0 end-0">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav w-100 justify-content-center text-center mb-2 ">
+  
+          <li class="nav-item">
+            <a class="nav-link" routerLink="home" routerLinkActive="active-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="review" routerLinkActive="active-link">Review</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="list" routerLinkActive="active-link">Research List</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 me-3 align-items-center">
+          <li class="nav-item">
+            <i class="fa-solid fa-bell fs-2 me-3 cursor-pointer mt-1" routerLink="notification" routerLinkActive="icon-main"></i>
+          </li>
+          <li class="nav-item">
+            <button class="btn-main" (click)="logout()">logout</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

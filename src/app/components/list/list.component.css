@@ -1,0 +1,29 @@
+.section{
+
+    background-color: #D1D1D1 !important;
+}
+th{
+    text-align: center;
+    font-size: 25px;
+    background-color: #363840;
+    color: white;
+    padding: 10px;
+    border-bottom: #D1D1D1 6px solid;
+
+}
+td{
+    text-align: center;
+    font-size: 25px;
+    background-color: white;
+    
+    padding: 10px;
+    border-bottom: #D1D1D1 6px solid;
+}
+.table-1 {
+   
+    height: 68vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
