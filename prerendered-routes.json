@@ -1,0 +1,20 @@
+{
+  "routes": [
+    "/adminLayout",
+    "/adminLayout/admin",
+    "/adminLayout/home",
+    "/adminLayout/list",
+    "/adminLayout/notification",
+    "/adminLayout/rate",
+    "/adminLayout/review",
+    "/auth",
+    "/auth/login",
+    "/auth/register",
+    "/main",
+    "/main/home",
+    "/main/list",
+    "/main/notification",
+    "/main/rate",
+    "/main/review"
+  ]
+}
